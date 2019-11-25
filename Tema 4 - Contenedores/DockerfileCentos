@@ -1,0 +1,9 @@
+FROM centos:latest
+
+MAINTAINER Miguel imiguel10@correo.ugr.es
+
+RUN yum install python3 -y
+
+COPY holamundo.py .
+RUN python3 -V
+CMD ["python3", "holamundo.py"]

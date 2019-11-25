@@ -1,0 +1,10 @@
+FROM ubuntu:latest
+
+MAINTAINER Miguel imiguel10@correo.ugr.es
+
+RUN apt update
+RUN apt install python3 -y
+
+COPY holamundo.py .
+RUN python3 -V
+CMD ["python3", "holamundo.py"]
